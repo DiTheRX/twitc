@@ -1,7 +1,7 @@
 const express = require('express'),
     proxy = require('http-proxy-middleware');
 
-let target = 'https://www.soccer.com';
+let target = 'https://www.kroger.com';
 
 const onProxyRes = (proxyRes, req, res) => {
     proxyRes.headers['content-security-policy-report-only'] = undefined;
